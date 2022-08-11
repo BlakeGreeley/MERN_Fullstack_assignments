@@ -1,13 +1,28 @@
 const Product = require('../models/product.model');
 
-module.exports.index = (request, response) => {
-    response.json({
+module.exports.index = (req, res) => {
+    res.json({
         message: "Hello World"
     });
 }
 
-module.exports.createProduct = ( request, response ) => {
-    Product.create(request.body)
-        .then(product => response.json(product))
-        .catch((err) => console.log(err));
+module.exports = {
+    getAllProducts: (req, res) => {
+        Product.find({})
+            .then((allProducts) => res.json(allProducts))
+            .catch((err) => console.log(err));
+    },
+    
+    getOneProduct: (req, res) => {
+        Product.findOne({_id: req.params.id})
+            .then((oneProduct) => res.json(oneProduct))
+            .catch((err) => console.log(err));
+    },
+
+    createProduct: (req, res) => {
+        Product.create(req.body)
+            .then((newProduct) => res.json(newProduct))
+            .catch((err) => console.log(err));
+    }
+
 }
