@@ -1,7 +1,7 @@
 import './App.css';
-import Main from "./view/Main";
+import Main from "./views/Main";
 import OneProduct from "./components/OneProduct";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react";
 
 function App() {
   return (
