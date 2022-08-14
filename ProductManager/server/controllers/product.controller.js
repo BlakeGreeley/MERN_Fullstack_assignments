@@ -30,7 +30,7 @@ module.exports = {
             new: true,
             runValidators: true,
         })
-            .then((updateProduct) => res.json(updateProduct))
+            .then((updatedProduct) => res.json(updatedProduct))
             .catch((err) => console.log(err));
     },
 
@@ -39,5 +39,4 @@ module.exports = {
             .then((deleteId) => res.json(deleteId))
             .catch((err) => console.log(err));
     },
-
-}
+};
