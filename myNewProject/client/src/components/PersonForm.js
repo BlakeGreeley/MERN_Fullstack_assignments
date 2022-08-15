@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const PersonForm = () => {
-    cosnt [firstName, setFirsrName] = useState("");
+    const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
 
     const submitHandler = (e) => {
@@ -19,10 +19,10 @@ const PersonForm = () => {
     }
 
     return (
-        <form onSubmit={onSubmitHandler}>
+        <form onSubmit={submitHandler}>
             <p>
                 <label>First Name</label> <br/>
-                <input type="text" onChange = {(e) => setFirsrName(e.target.value)}/>
+                <input type="text" onChange = {(e) => setFirstName(e.target.value)}/>
             </p>
 
             <p>
