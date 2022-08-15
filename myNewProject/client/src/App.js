@@ -1,7 +1,7 @@
 import './App.css';
 import React, { useState } from 'react';
 import axios from 'axios';
-import PersonForm from './components/PersonForm';
+// import PersonForm from './components/PersonForm';
 import {BrowserRouter, Routes, Router} from 'react-router-dom';
 import Main from '../views/Main';
 
@@ -10,8 +10,7 @@ const App = () => {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route element={<PersonForm/>} path="/home"/>
-          <Route element={<PersonList/>} path="/home"/>
+          <Route element={<Main/>} path="/home" default/>
         </Routes>
       </BrowserRouter>
     </div>
