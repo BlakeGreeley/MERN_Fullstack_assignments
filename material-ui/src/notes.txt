@@ -1,0 +1,44 @@
+using material-ui 
+
+1. npx create-react-app client
+
+2. npm install @material-ui/core
+
+things you can use the library for:
+
+- import { Paper } from '@material-ui/core';
+...
+<Paper elevation={3}>
+    <p>Some text here</p>
+</Paper>
+
+// Paper component is one that will give a nice 
+background and potentially some elevation to a component.
+
+- import { Card, CardContent } from '@material-ui/core';
+...
+<Card>
+    <CardContent>
+        <h1>This is content within my card</h1>
+    </CardContent>
+</Card>
+
+// You may want to use a card as well
+
+- import { Button } from '@material-ui/core';
+...
+<Button>
+    Click Me
+</Button>
+
+// Material-UI has very nice looking buttons as well. 
+It is as simple as importing it and implementing it
+
+- <TextField variant="filled"/>
+
+// Material can make very nice looking 
+forms as well. We can do something simple
+
+
+
+- Go to component folder to see a example pf implementation. -
