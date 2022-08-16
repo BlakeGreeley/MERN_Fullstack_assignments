@@ -22,7 +22,7 @@ const AuthorForm = () => {
 
     return (
         <div className='container'>
-            <div>
+            <div className='row'>
                 <div className='column'>
                     <Link to = "/">Home</Link>
                     <form onSubmit={handleSubmit}>
