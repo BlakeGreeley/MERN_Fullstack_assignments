@@ -69,3 +69,5 @@ const DisplayAllAuthors = () => {
         </div>
     );
 };
+
+export default DisplayAllAuthors;
