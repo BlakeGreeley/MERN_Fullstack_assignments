@@ -47,7 +47,7 @@ const PersonList = (props) => {
                                 {() => removeFromDom(person._id)} />
                         </div>
                 )})
-            }
+            };
         </div>
     );
 };
