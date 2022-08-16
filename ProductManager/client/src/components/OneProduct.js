@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import {useNavigate, useParams} from 'react-router-dom';
+import DeleteButton from "./DeleteButton";
 
 const OneProduct = (props) => {
     const { id } = useParams();
@@ -36,7 +37,9 @@ const OneProduct = (props) => {
             <h2>{oneProduct.title}</h2>
             <p>Price: ${oneProduct.price}</p>
             <p>Description: {oneProduct.description}</p>
-            <button onClick={deleteHandler}>Delete</button>
+            <button onClick={deleteHandler}>
+                Delete
+            </button>
         </div>
     );
 };
