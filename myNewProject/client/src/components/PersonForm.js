@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const PersonForm = () => {
-    const {people, setPeople} = props;
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
 

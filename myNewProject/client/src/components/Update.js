@@ -3,7 +3,7 @@ import axios from 'axios';
 import {useNavigate} from "react-router-dom";
 
 const Update = (props) => {
-    const { id } = useParams;
+    // const { id } = useParams;
     const [firstName, setFirstName] = useState();
     const [lastName, setLastName] = useState();
     const navigate = useNavigate();
