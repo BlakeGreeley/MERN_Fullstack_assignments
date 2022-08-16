@@ -19,7 +19,7 @@ const PersonForm = (props) => {
     //             setPeople([...people, res.data]);
     //         })
     //         .catch(err => console.log(err))
-    // }
+    }
 
     return (
         <form onSubmit={submitHandler}>

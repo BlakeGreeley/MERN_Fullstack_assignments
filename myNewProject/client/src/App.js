@@ -3,7 +3,7 @@ import './App.css';
 // import axios from 'axios';
 // import PersonForm from './components/PersonForm';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import Main from '.src/views/Main';
+import Main from './views/Main'
 import Detail from './components/Detail';
 import Update from './components/Update';
 
