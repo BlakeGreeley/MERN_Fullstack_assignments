@@ -1,55 +1,52 @@
 .container {
-  background-color: rgb(202, 201, 199);
-  border: black solid 2px;
-  margin-left: 23%;
-  margin-right: 23%;
-  padding: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 10px;
 }
 
 body {
-  background-color: antiquewhite;
+  background-color: white;
 }
 
 .group {
-  display: flex;
+  border: black solid 2px;
+  height: 150px;
+  width: 250px;
+}
+
+.label {
+  height: 20px;
+  margin-top: 60px;
+  justify-content: space-between;
+  margin-left: 15px;
 }
 
 .table{
-  align-items: center;
-  margin-left: 80px;
-  padding: 20px;
+  border: black solid 1px;
+  width: 300px;
+  text-decoration: grid;
 }
 
 th {
-  border: solid black 1px;
-  background-color: azure;
-  padding: 10px;
+  background-color: white;
+  width: 20px;
 }
 
 td {
   justify-content: center;
+  background-color: white;
   border: solid black 1px;
-  background-color: azure;
-  padding: 10px;
+  width: 20px;
 }
 
 .column {
   padding: 5px;
-  background-color: rgb(172, 171, 169);
   width: 400px;
   height: 95%;
-  align-items: center;
 }
 
 
 .App {
-  text-align: center;
-  background-color: antiquewhite;
   padding: 20px;
-  text-decoration: underline;
+  margin-left: 10%;
 }
 
 .purple {
@@ -58,9 +55,31 @@ td {
 }
 
 .btn{
-  background-color: white;
+  background-color: rgb(154, 221, 243);
   border: solid black 1px;
-  color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 10%;
+  margin: 5px;
+  width: 50px;
+  font-size: 18;
+}
+
+.edit_btn {
+  background-color: rgb(185, 172, 99);
+  border: solid black 1px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10%;
+  margin: 5px;
+  width: 50px;
+  font-size: 18;
+}
+
+.delete_btn {
+  background-color: rgb(177, 124, 75);
+  border: solid black 1px;
+  color: white;
   text-decoration: none;
   border-radius: 10%;
   margin: 5px;

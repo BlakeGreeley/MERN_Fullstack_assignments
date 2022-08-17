@@ -26,13 +26,14 @@ const AuthorForm = () => {
                 <div className='column'>
                     <Link to = "/">Home</Link>
                     <h2 className="purple">Add your favorite author:</h2>
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={handleSubmit} className='group'>
                         <label htmlFor ="name">Name:</label>
                         <input 
                             type="text"
                             className='form-input'
                             onChange={(e) => setName(e.target.value)}
                             value={name}
+                            className="label"
                         />
                         {errors.name ? <p>{errors.name.message}</p> : null}
                         

@@ -53,12 +53,12 @@ const DisplayAllAuthors = () => {
                                     <td>{author.name}</td>
                                     <td>
                                         <Link to = {`/edit/${author._id}`}>
-                                            <button className="btn">Edit</button>
+                                            <button className="edit_btn">Edit</button>
                                         </Link>
 
                                         <button
                                             onClick = {() => handleDeleteAuthor(author._id)}
-                                            className="btn"
+                                            className="delete_btn"
                                         >
                                             Delete
                                         </button>

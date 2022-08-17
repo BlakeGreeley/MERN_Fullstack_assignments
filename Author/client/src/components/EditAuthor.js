@@ -48,14 +48,15 @@ const EditAuthor = (props) => {
                 </h1>
             ) : null}
             <div className="group">
-                <label htmlFor="name">
-                    Name
+                <label htmlFor="name" className="label">
+                    Name: 
                 </label>
                 <input
                     type="text"
                     id="name"
                     value={authorName}
                     onChange = {(e) => setAuthorName(e.target.value)}
+                    className="label"
                 />
                 {errors.name ? <p>errors.name.message</p> : null}
             </div>
