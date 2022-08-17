@@ -11,8 +11,9 @@ const AuthorForm = () => {
         e.preventDefault();
         axios
             .post("http://localhost:8000/api/author", {name})
-            .then((response) => {console.log(response);
-                                        navigate("/");
+            .then((response) => {
+                console.log(response);
+                navigate("/");
             })
             .catch((err) => {
                 console.log(err.response.data.err.errors);
